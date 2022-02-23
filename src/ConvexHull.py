@@ -5,13 +5,6 @@ def CheckLocation(p1, p2, p3):
     return p1[0] * p2[1] + p3[0] * p1[1] + p2[0] * p3[1] - p3[0] * p2[1] - p2[0] * p1[1] - p1[0] * p3[1]
 
 
-# def MaxMinId(S, max, min):
-#     for i in range(1, len(S)):
-#         if(S[i][0] > S[max][0]):
-#             max = i
-#         if(S[i][0] < S[min][0]):
-#             min = i
-
 def DivideArea(p1, pn, S, S1, S2):
     for p in S:
         det = CheckLocation(p1, pn, p)
@@ -58,7 +51,6 @@ def ConvexHullDnC(S):
     S = sorted(S, key=lambda x: x[0])
     p1 = S.pop(0)
     pn = S.pop(-1)
-    hull.append([p1, pn])
     for p in S:
         det = CheckLocation(p1, pn, p)
         if det > 0:
