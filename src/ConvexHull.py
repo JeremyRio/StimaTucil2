@@ -2,10 +2,19 @@ import math
 
 
 def CheckLocation(p1, p2, p3):
+    """
+    Mengembalikan hasil perhitungan determinan dari 3 titik. 
+    Fungsi memeriksa apakah titik p3 berada di sebelah kiri atau 
+    sebelah kanan suatu garis yang dibentuk oleh p1 dan p2.
+    """
     return p1[0] * p2[1] + p3[0] * p1[1] + p2[0] * p3[1] - p3[0] * p2[1] - p2[0] * p1[1] - p1[0] * p3[1]
 
 
 def DivideArea(p1, pn, S, S1, S2):
+    """
+    I.S.: S1 dan S2 belum terdefinisi
+    I.F.: S1 berisi titik yang berada di bagian kiri dari garis yang dibentuk oleh p1 dan pn. S2 berisi titik yang berada di bagian kanan dari garis yang dibentuk oleh p1 dan pn.
+    """
     for p in S:
         det = CheckLocation(p1, pn, p)
         if det > 0:
@@ -15,6 +24,9 @@ def DivideArea(p1, pn, S, S1, S2):
 
 
 def Angle(d1, d2):
+    """
+    Mengembalikan nilai sudut yang diapit dari garis d1 dan d2.
+    """
     if(d1 == 0 or d2 == 0):
         return 0
     else:
@@ -25,10 +37,12 @@ def Angle(d1, d2):
 
 
 def FurthestDistance(S, p1, pn):
+    """
+    Mengembalikan titik yang memiliki jarak terjauh dari p1 dan pn.
+    """
     maxd1 = math.dist(S[0], p1)
     maxd2 = math.dist(S[0], pn)
     index = 0
-
     for i in range(1, len(S)):
         d1 = math.dist(S[i], p1)
         d2 = math.dist(S[i], pn)
@@ -45,6 +59,7 @@ def FurthestDistance(S, p1, pn):
 
 
 def ConvexHullDnC(S):
+    "Fungsi utama pembuatan Convex Hull dengan algoritma Divide and Conquer"
     hull = []
     S1 = []
     S2 = []
@@ -63,6 +78,7 @@ def ConvexHullDnC(S):
 
 
 def FindHull(S, p1, pn, hull):
+    "Fungsi rekursif dari Divide and Conquer"
     if(len(S) == 0):
         hull.append([p1, pn])
     else:
