@@ -58,7 +58,7 @@ def FurthestDistance(S, p1, pn):
     return S.pop(index)
 
 
-def ConvexHullDnC(S):
+def ConvexHull(S):
     "Fungsi utama pembuatan Convex Hull dengan algoritma Divide and Conquer"
     hull = []
     S1 = []
