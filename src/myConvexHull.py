@@ -63,7 +63,7 @@ def ConvexHull(S):
     hull = []
     S1 = []
     S2 = []
-    S = sorted(S, x=lambda x: x[0], y=lambda x: x[1])
+    S = sorted(S, x=lambda x: x[0], y=lambda y: y[1])
     p1 = S.pop(0)
     pn = S.pop(-1)
     for p in S:
@@ -78,7 +78,10 @@ def ConvexHull(S):
 
 
 def FindHull(S, p1, pn, hull):
-    "Fungsi rekursif dari Divide and Conquer"
+    """
+    I.S.: S berisi titik yang berada di bagian kiri atau kanan dari garis yang dibentuk oleh p1 dan pn.
+    F.S.: hull berisi titik-titik terluar yang membentuk Convex Hull dari S.
+    """
     if(len(S) == 0):
         hull.append([p1, pn])
     else:
