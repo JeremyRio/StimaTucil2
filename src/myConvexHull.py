@@ -63,7 +63,7 @@ def ConvexHull(S):
     hull = []
     S1 = []
     S2 = []
-    S = sorted(S, key=lambda x: x[0])
+    S = sorted(S, x=lambda x: x[0], y=lambda x: x[1])
     p1 = S.pop(0)
     pn = S.pop(-1)
     for p in S:
