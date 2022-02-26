@@ -63,9 +63,9 @@ def ConvexHull(S):
     hull = []
     S1 = []
     S2 = []
-    S = sorted(S, x=lambda x: x[0], y=lambda y: y[1])
-    p1 = S.pop(0)
-    pn = S.pop(-1)
+    sortedS = sorted(S, key=lambda k: [k[0], k[1]])
+    p1 = sortedS.pop(0)
+    pn = sortedS.pop(-1)
     for p in S:
         det = CheckLocation(p1, pn, p)
         if det > 0:
