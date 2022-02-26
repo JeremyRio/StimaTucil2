@@ -1,5 +1,5 @@
-# Tugas Kecil 1 IF2211 Strategi Algoritma
-> Penyelesaian _Word Search Puzzle_ dengan Algoritma _Brute Force_
+# Tugas Kecil 2 IF2211 Strategi Algoritma
+> Implementasi _Convex Hull_ untuk Visualisasi _Tes Linear Separability Dataset_ dengan Algoritma _Divide and Conquer_
 
 ## Daftar Isi
 * [Deskripsi](#deskripsi)
@@ -8,55 +8,30 @@
 * [Penulis](#penulis)
 
 ## Deskripsi
-Membuat program untuk menemukan semua kata di dalam _word search puzzle_ menggunakan algoritma _Brute Force_ 
+Membuat sebuah pustaka serta program visualisasi data dalam bahasa Python yang dapat mengembalikan convex hull dari kumpulan data 2 dimensi (dapat dianggap kumpulan titik 2 dimensi) 
 
 ## Requirements
-- Windows **(Reccomended)**
-- [Java](https://www.java.com/en/download/)
-- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/)
+- [Python](https://www.python.org/downloads/) **(Direkomendasi Versi Terbaru)**
+- [pip](https://phoenixnap.com/kb/install-pip-windows)
 
 ## Penggunaan
 **[PENTING]** </br>
-Program hanya dapat dijalankan dalam sistem operasi **Windows**. Sebagian besar console **Windows 10** tidak menyalakan dukungan ANSI escape untuk pewarnaan tulisan dalam terminal. Agar terminal **Windows 10** dapat mendukung pewarnaan tulisan, pengguna harus mengikut langkah berikut ([referensi](https://stackoverflow.com/questions/51680709/colored-text-output-in-powershell-console-using-ansi-vt100-codes)):
-1. Buka **Registry Editor** (Bisa melalui `Windows StartMenu` atau menekan `Win + R` lalu menulis `regedit`)
-
-![image](https://user-images.githubusercontent.com/73146752/150823809-bfa17783-439e-44e8-903c-8d07e382ae50.png)
-
-2. Atur path menjadi `Computer\HKEY_CURRENT_USER\Console` lalu klik kanan area putih kemudian `New > DWORD (32-bit) Value`
-
-![image](https://user-images.githubusercontent.com/73146752/150825618-09b0e934-a929-47b6-b331-e67f983edaae.png)
-
-3. Ganti nama variabel yang baru dibuat menjadi `VirtualTerminalLevel`
-
-![image](https://user-images.githubusercontent.com/73146752/150826575-22ec04ad-c3ed-464a-b81a-430b42e581fe.png)
-![image](https://user-images.githubusercontent.com/73146752/150826649-8fd57ca7-8f2a-4e39-a386-fbf184ec1006.png)
-
-4. Klik kanan `VirtualTerminalLevel` lalu pilih `Modify`, kemudian isi `Value data` menjadi 1
-
-![image](https://user-images.githubusercontent.com/73146752/150827213-e8259d27-cf09-4449-a610-4fcf5702a05c.png)
-![image](https://user-images.githubusercontent.com/73146752/150827266-b4c10e17-72c5-4fdb-8484-59e7721c2ac7.png)
+Sebelum menjalankan program, diperlukan file pada github ini kemudian meng-install beberapa library python dengan menjalankan perintah dalam terminal sebagai berikut:
+```
+pip install jupyter notebook
+pip install numpy
+pip install pandas
+pip install scikit-learn
+```
 
 ### Langkah Menjalankan Program
-### A. Melalui _Batch File_ / `run.bat` (**Windows**)
-`run.bat` akan melakukan kompilasi program secara otomatis melalui **Command Prompt**.</br>
-Jalankan `run.bat` pada folder `bin` untuk memulai program _Word Search Puzzle_
-
-### B. Melalui **Command Prompt/Powershell** (**Windows**)
-1. Atur path folder menjadi `Tucil1_13520082/bin`
-
-![image](https://user-images.githubusercontent.com/73146752/151102124-4c058900-38bd-493e-88c1-cd77c12f22aa.png)
-
-2. Jalankan perintah berikut untuk memulai program _Word Search Puzzle_:
+1. Buka terminal kemudian navigasikan path pada folder `src` seperti gambar berikut:
+  ![image](https://user-images.githubusercontent.com/73146752/155851727-e4c76a71-f013-405e-9ed6-88291e71ff23.png)
+2. Jalankan perintah berikut:
 ```
-javac -d ../bin ../src/Puzzle.java
-java Puzzle
+jupyter notebook myConvexHull.ipynb
 ```
-
-### Langkah Penggunaan Program
-1. Jika ingin menambahkan **studi kasus**, masukkan **studi kasus** dalam folder `test` dengan ekstensi `.txt`. Contohnya `small1.txt`
-2. Jalankan program melalui cara **A** atau cara **B** yang telah disinggung sebelumnya
-3. Masukkan nama file tanpa mencantumkan ekstensi `.txt`. Contohnya `small1`
-4. Selamat melihat program menyelesaikan _Word Search Puzzle_ :)
+3. Selamat mencoba beberapa data tes yang telah disediakan :)
 
 # Penulis
 Nama: Jeremy Rionaldo Pasaribu </br>
