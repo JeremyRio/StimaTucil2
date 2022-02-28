@@ -30,7 +30,9 @@ pip install matplotlib
 
 Langkah Menjalankan Program Dalam Jupyter Notebook:
 1. Buka terminal kemudian navigasikan path pada folder `src` seperti gambar berikut:
+
   ![image](https://user-images.githubusercontent.com/73146752/155851727-e4c76a71-f013-405e-9ed6-88291e71ff23.png)
+
 2. Jalankan perintah berikut:
 ```
 jupyter notebook myConvexHull.ipynb
