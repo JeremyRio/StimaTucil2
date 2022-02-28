@@ -15,6 +15,11 @@ Membuat sebuah pustaka serta program visualisasi data dalam bahasa Python yang d
 - [pip](https://phoenixnap.com/kb/install-pip-windows)
 
 ## Penggunaan
+### 1. Google Collab
+Berikut merupakan link program dalam google collab:
+https://colab.research.google.com/drive/1etIbFAIl3jBi3V0FMwh-zLOy41i8IYwc?usp=sharing
+
+### 2. Jupyter Notebook
 **[PENTING]** </br>
 Sebelum menjalankan program, diperlukan file pada github ini kemudian meng-install beberapa library python dengan menjalankan perintah dalam terminal sebagai berikut:
 ```
