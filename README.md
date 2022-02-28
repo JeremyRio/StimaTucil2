@@ -14,10 +14,12 @@ Membuat sebuah pustaka serta program visualisasi data dalam bahasa Python yang d
 ## Requirements
 - [Python](https://www.python.org/downloads/) **(Direkomendasi Versi Terbaru)**
 - [pip](https://phoenixnap.com/kb/install-pip-windows)
+- Jupyter Notebook
+- Library pip: numpy, pandas, scikit-learn
 
 ## Penggunaan
 **[PENTING]** </br>
-Sebelum menjalankan jupyter notebook, pastikan sudah mendownload file dari github ini lalu meng-install beberapa library python dengan menjalankan perintah dalam terminal sebagai berikut:
+Jika belum memiliki jupyter notebook dan library yang dibutuhkan, pastikan sudah mendownload file dari github ini lalu meng-install beberapa library python dengan menjalankan perintah dalam terminal sebagai berikut:
 ```
 pip install jupyter notebook
 pip install numpy
