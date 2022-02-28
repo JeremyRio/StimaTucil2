@@ -1,6 +1,6 @@
 # Tugas Kecil 2 IF2211 Strategi Algoritma
 
-> Implementasi _Convex Hull_ untuk Visualisasi _Tes Linear Separability Dataset_ dengan Algoritma _Divide and Conquer_
+> Implementasi _Convex Hull_ untuk Visualisasi Tes _Linear Separability Dataset_ dengan Algoritma _Divide and Conquer_
 
 ## Daftar Isi
 * [Deskripsi](#deskripsi)
@@ -12,10 +12,10 @@
 Membuat sebuah pustaka serta program visualisasi data dalam bahasa Python yang dapat mengembalikan convex hull dari kumpulan data 2 dimensi (dapat dianggap kumpulan titik 2 dimensi) 
 
 ## Requirements
-- [Python](https://www.python.org/downloads/) **(Direkomendasi Versi Terbaru)**
+- [Python](https://www.python.org/downloads/) **(Rekomendasi Versi Terbaru)**
 - [pip](https://phoenixnap.com/kb/install-pip-windows)
 - Jupyter Notebook
-- Library pip: numpy, pandas, scikit-learn
+- Library pip: numpy, pandas, scikit-learn, matplotlib
 
 ## Penggunaan
 **[PENTING]** </br>
