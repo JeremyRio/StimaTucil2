@@ -25,6 +25,7 @@ pip install jupyter notebook
 pip install numpy
 pip install pandas
 pip install scikit-learn
+pip install matplotlib
 ```
 
 Langkah Menjalankan Program Dalam Jupyter Notebook:
