@@ -1,4 +1,5 @@
 # Tugas Kecil 2 IF2211 Strategi Algoritma
+
 > Implementasi _Convex Hull_ untuk Visualisasi _Tes Linear Separability Dataset_ dengan Algoritma _Divide and Conquer_
 
 ## Daftar Isi
@@ -16,12 +17,12 @@ Membuat sebuah pustaka serta program visualisasi data dalam bahasa Python yang d
 
 ## Penggunaan
 ### 1. Google Collab
-Berikut merupakan link program dalam google collab:
+Berikut merupakan link program dalam google collab: <br>
 https://colab.research.google.com/drive/1etIbFAIl3jBi3V0FMwh-zLOy41i8IYwc?usp=sharing
 
 ### 2. Jupyter Notebook
 **[PENTING]** </br>
-Sebelum menjalankan program, diperlukan file pada github ini kemudian meng-install beberapa library python dengan menjalankan perintah dalam terminal sebagai berikut:
+Sebelum menjalankan jupyter notebook, pastikan sudah mendownload file dari github ini lalu meng-install beberapa library python dengan menjalankan perintah dalam terminal sebagai berikut:
 ```
 pip install jupyter notebook
 pip install numpy
@@ -29,7 +30,7 @@ pip install pandas
 pip install scikit-learn
 ```
 
-### Langkah Menjalankan Program
+Langkah Menjalankan Program Dalam Jupyter Notebook:
 1. Buka terminal kemudian navigasikan path pada folder `src` seperti gambar berikut:
   ![image](https://user-images.githubusercontent.com/73146752/155851727-e4c76a71-f013-405e-9ed6-88291e71ff23.png)
 2. Jalankan perintah berikut:
